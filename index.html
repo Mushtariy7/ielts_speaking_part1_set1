@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IELTS Speaking Practice | Part 1</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+#ffffff 0%,
+#f7f1ff 45%,
+#efe5ff 100%
+);
+
+min-height:100vh;
+padding:20px;
+color:#2d1452;
+}
+
+.container{
+max-width:920px;
+margin:auto;
+}
+
+/* COVER */
+
+.cover-page{
+
+min-height:92vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.cover-card{
+
+background:white;
+
+padding:42px 30px;
+
+border-radius:34px;
+
+border:1px solid #eadfff;
+
+box-shadow:
+0 12px 40px rgba(124,77,255,0.10);
+
+max-width:600px;
+width:100%;
+}
+
+.logo{
+font-size:64px;
+margin-bottom:16px;
+}
+
+.cover-title{
+
+font-size:40px;
+font-weight:700;
+
+color:#5a2ec7;
+
+margin-bottom:10px;
+}
+
+.cover-subtitle{
+
+font-size:16px;
+line-height:1.7;
+
+color:#856cbc;
+
+margin-bottom:28px;
+}
+
+.cover-info{
+
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+
+margin-bottom:28px;
+}
+
+.info-pill{
+
+padding:12px 18px;
+
+background:#faf7ff;
+
+border:1px solid #eadfff;
+
+border-radius:16px;
+
+font-size:14px;
+font-weight:500;
+
+color:#5a2ec7;
+}
+
+.start-btn{
+
+padding:18px 36px;
+
+border:none;
+border-radius:20px;
+
+cursor:pointer;
+
+font-size:17px;
+font-weight:600;
+
+color:white;
+
+background:
+linear-gradient(
+135deg,
+#7c4dff,
+#5e35b1
+);
+
+box-shadow:
+0 10px 25px rgba(124,77,255,0.25);
+}
+
+.creator{
+
+margin-top:24px;
+
+font-size:14px;
+
+color:#8b77b2;
+}
+
+/* MAIN */
+
+.main-app{
+display:none;
+}
+
+.topbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+gap:12px;
+
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+.badge{
+
+display:flex;
+align-items:center;
+gap:8px;
+
+background:white;
+
+padding:10px 18px;
+
+border-radius:14px;
+
+border:1px solid #e7d9ff;
+
+font-size:14px;
+font-weight:600;
+
+color:#6d42d8;
+
+text-decoration:none;
+
+box-shadow:
+0 4px 14px rgba(124,77,255,0.08);
+}
+
+.main-card{
+
+background:white;
+
+border-radius:34px;
+
+padding:28px;
+
+border:1px solid #eadfff;
+
+box-shadow:
+0 12px 40px rgba(124,77,255,0.10);
+}
+
+.title{
+
+text-align:center;
+
+font-size:34px;
+font-weight:700;
+
+color:#5425bd;
+
+margin-bottom:8px;
+}
+
+.subtitle{
+
+text-align:center;
+
+color:#8c73c1;
+
+margin-bottom:30px;
+}
+
+.progress-wrapper{
+
+width:100%;
+height:12px;
+
+background:#ece1ff;
+
+border-radius:50px;
+
+overflow:hidden;
+
+margin-bottom:30px;
+}
+
+.progress-bar{
+
+height:100%;
+width:0%;
+
+background:
+linear-gradient(
+90deg,
+#7c4dff,
+#b388ff
+);
+
+transition:0.4s;
+}
+
+.info-row{
+
+display:flex;
+justify-content:space-between;
+
+gap:12px;
+flex-wrap:wrap;
+
+margin-bottom:25px;
+}
+
+.info-box{
+
+background:#faf7ff;
+
+border:1px solid #eadfff;
+
+padding:14px 18px;
+
+border-radius:18px;
+
+font-size:15px;
+font-weight:500;
+
+color:#5b2ec7;
+}
+
+.question-card{
+
+background:#fcfbff;
+
+border:1px solid #ece2ff;
+
+border-radius:30px;
+
+padding:30px 24px;
+}
+
+.question-label{
+
+font-size:14px;
+
+color:#9075c7;
+
+margin-bottom:10px;
+}
+
+.question-text{
+
+font-size:30px;
+font-weight:700;
+
+line-height:1.5;
+
+color:#2b124c;
+}
+
+.branch-buttons{
+
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+
+margin-top:22px;
+}
+
+.branch-btn{
+
+padding:14px 20px;
+
+border:none;
+border-radius:16px;
+
+cursor:pointer;
+
+font-size:15px;
+font-weight:600;
+
+color:white;
+
+background:
+linear-gradient(
+135deg,
+#7c4dff,
+#5e35b1
+);
+}
+
+.mic-wrapper{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+margin:30px 0;
+}
+
+.mic-button{
+
+width:96px;
+height:96px;
+
+border:none;
+border-radius:50%;
+
+font-size:36px;
+
+cursor:pointer;
+
+background:
+linear-gradient(
+135deg,
+#7c4dff,
+#a970ff
+);
+
+color:white;
+
+box-shadow:
+0 0 30px rgba(124,77,255,0.30);
+}
+
+.mic-button.recording{
+
+background:
+linear-gradient(
+135deg,
+#ff1744,
+#ff5e7e
+);
+
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.recording-text{
+
+margin-top:12px;
+
+font-size:15px;
+font-weight:500;
+
+color:#7b5db6;
+}
+
+textarea{
+
+width:100%;
+min-height:150px;
+
+border:none;
+outline:none;
+
+resize:none;
+
+padding:18px;
+
+font-size:16px;
+
+border-radius:22px;
+
+background:#f8f5ff;
+
+border:1px solid #e5d8ff;
+
+margin-top:18px;
+
+color:#2c1450;
+}
+
+audio{
+width:100%;
+margin-top:18px;
+}
+
+.button-row{
+
+display:flex;
+justify-content:center;
+
+gap:14px;
+flex-wrap:wrap;
+
+margin-top:28px;
+}
+
+.action-btn{
+
+padding:15px 24px;
+
+border:none;
+border-radius:18px;
+
+cursor:pointer;
+
+font-size:15px;
+font-weight:600;
+
+color:white;
+}
+
+.next-btn{
+background:linear-gradient(135deg,#7c4dff,#5e35b1);
+}
+
+.review-btn{
+background:linear-gradient(135deg,#00b894,#00a383);
+}
+
+.download-btn{
+background:linear-gradient(135deg,#ff9800,#ff6f00);
+}
+
+.retry-btn{
+background:linear-gradient(135deg,#7c4dff,#5e35b1);
+}
+
+.complete-box{
+
+display:none;
+
+margin-top:35px;
+
+padding:30px;
+
+border-radius:30px;
+
+background:#faf7ff;
+
+border:1px solid #eadfff;
+
+text-align:center;
+}
+
+.complete-title{
+
+font-size:32px;
+font-weight:700;
+
+color:#5425bd;
+
+margin-bottom:12px;
+}
+
+.review-section{
+
+display:none;
+
+margin-top:40px;
+}
+
+.review-topic-card{
+
+background:#faf7ff;
+
+border:1px solid #eadfff;
+
+padding:24px;
+
+border-radius:24px;
+
+margin-bottom:22px;
+}
+
+.review-topic-title{
+
+font-size:24px;
+font-weight:700;
+
+color:#5a2ec7;
+
+margin-bottom:18px;
+}
+
+.review-question{
+
+padding:14px 16px;
+
+background:white;
+
+border:1px solid #eadfff;
+
+border-radius:16px;
+
+margin-bottom:12px;
+
+font-size:15px;
+line-height:1.7;
+}
+
+.question-label-review{
+
+font-weight:700;
+color:#7c4dff;
+}
+
+.footer{
+
+text-align:center;
+
+margin-top:30px;
+
+font-size:14px;
+
+color:#8b77b2;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="cover-page" id="coverPage">
+
+<div class="cover-card">
+
+<div class="logo">
+🎙
+</div>
+
+<h1 class="cover-title">
+IELTS Speaking ☆ Part 1 Practice
+</h1>
+
+<p class="cover-subtitle">
+Adaptive Part 1 Simulator • British Accent • Voice Recording
+</p>
+
+<div class="cover-info">
+
+<div class="info-pill">
+8 Questions
+</div>
+
+<div class="info-pill">
+Adaptive Topics
+</div>
+
+<div class="info-pill">
+Speaking Practice
+</div>
+
+</div>
+
+<button class="start-btn"
+onclick="startPractice()">
+
+▶ Start Practice
+
+</button>
+
+<div class="creator">
+Created by @Lilya_MG
+</div>
+
+</div>
+
+</div>
+
+<div class="main-app" id="mainApp">
+
+<div class="topbar">
+
+<a href="https://t.me/Lilya_MG"
+target="_blank"
+class="badge">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+width="18"
+height="18"
+fill="currentColor"
+viewBox="0 0 16 16">
+
+<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.5 11.5l-.2 2.7c.3 0 .5-.1.7-.3l1.7-1.6 3.5 2.5c.6.3 1 .2 1.2-.6l2.2-10.3c.2-.9-.3-1.3-.9-1.1L1.4 7.3c-.9.4-.9.9-.2 1.1l3.3 1 7.7-4.8c.4-.2.7-.1.4.2"/>
+
+</svg> @Lilya_MG
+
+</a>
+
+<div class="badge">
+Mushtariy | Bintu Ma'ruf
+</div>
+
+</div>
+
+<div class="main-card">
+
+<h1 class="title">
+IELTS Speaking Practice
+</h1>
+
+<p class="subtitle">
+Part 1 — Adaptive Speaking Simulator
+</p>
+
+<div class="progress-wrapper">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div class="info-row">
+
+<div class="info-box" id="topicBox">
+Topic Loading...
+</div>
+
+<div class="info-box" id="questionCounter">
+Question 1 / 8
+</div>
+
+<div class="info-box">
+⏱ <span id="timer">00:40</span>
+</div>
+
+</div>
+
+<div class="question-card">
+
+<div class="question-label">
+Examiner Question
+</div>
+
+<div class="question-text" id="questionText">
+Loading...
+</div>
+
+<div class="branch-buttons" id="branchButtons"></div>
+
+<div class="mic-wrapper">
+
+<button class="mic-button"
+id="micBtn"
+onclick="toggleRecording()">
+
+🎤
+
+</button>
+
+<div class="recording-text"
+id="recordingText">
+
+Tap to Record
+
+</div>
+
+</div>
+
+<textarea
+placeholder="Write keywords or ideas here...">
+</textarea>
+
+<audio id="audioPlayback" controls></audio>
+
+</div>
+
+<div class="button-row">
+
+<button class="action-btn next-btn"
+id="nextBtn"
+onclick="nextQuestion()">
+
+➡ Next Question
+
+</button>
+
+</div>
+
+<div class="complete-box" id="completeBox">
+
+<div class="complete-title">
+🎉 Practice Completed
+</div>
+
+<div class="button-row">
+
+<button class="action-btn retry-btn"
+onclick="generateNewSession()">
+
+🔁 Practice Again
+
+</button>
+
+<button class="action-btn review-btn"
+onclick="toggleReview()">
+
+📚 Review Questions
+
+</button>
+
+<button class="action-btn download-btn"
+onclick="downloadRecording()">
+
+⬇ Download Recording
+
+</button>
+
+</div>
+
+</div>
+
+<div class="review-section" id="reviewSection"></div>
+
+<div class="footer">
+Practice naturally. Avoid memorised answers.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const permanentTopics = [
+
+{
+type:"workStudy",
+name:"Work & Study",
+
+starter:
+"Do you work or are you a student?",
+
+workQuestions:[
+
+"What work do you do?",
+"Why did you choose that job?",
+"Do you like your job?",
+"Is there anything you dislike about your job?"
+
+],
+
+studyQuestions:[
+
+"What subjects are you studying?",
+"Why did you choose to study that subject?",
+"What do you like about your studies?",
+"What do you dislike about your studies?"
+
+]
+
+},
+
+{
+type:"hometown",
+name:"Hometown",
+
+questions:[
+
+"Please describe your hometown a little.",
+"What is your town well-known for?",
+"Do you like your hometown?",
+"Is that a big city or a small place?"
+
+]
+
+},
+
+{
+type:"home",
+name:"Home & Accommodation",
+
+starter:
+"What kind of housing accommodation do you live in?",
+
+flatQuestions:[
+
+"What do you like about your flat?",
+"What would you like to change in your flat?"
+
+],
+
+houseQuestions:[
+
+"What do you like about your house?",
+"Would you like to move house in the future?"
+
+]
+
+}
+
+];
+
+const extraTopics = [
+
+{
+name:"Teachers",
+
+questions:[
+
+"Would you like to be a teacher?",
+"Do you think you could be a teacher?",
+"Did you have a favourite teacher?"
+
+]
+
+},
+
+{
+name:"Social Media",
+
+questions:[
+
+"Do you think you spend too much time on social media?",
+"What do people often do on social media?",
+"Which social media apps are popular in your country?"
+
+]
+
+},
+
+{
+name:"Dreams & Ambitions",
+
+questions:[
+
+"What was your dream when you were a child?",
+"Are you the kind of person who sticks to dreams?",
+"Do you think you are an ambitious person?"
+
+]
+
+}
+
+];
+
+let generatedQuestions = [];
+let usedTopics = [];
+let currentQuestion = 0;
+let recordings = [];
+let randomPermanent;
+
+function createSession(){
+
+generatedQuestions = [];
+usedTopics = [];
+
+randomPermanent =
+permanentTopics[
+Math.floor(
+Math.random() *
+permanentTopics.length
+)
+];
+
+usedTopics.push(randomPermanent.name);
+
+if(randomPermanent.type === "workStudy"){
+
+generatedQuestions.push({
+
+topic:"Work & Study",
+question:randomPermanent.starter
+
+});
+
+}
+
+else if(randomPermanent.type === "hometown"){
+
+const shuffled =
+[...randomPermanent.questions]
+.sort(() => 0.5 - Math.random())
+.slice(0,3);
+
+shuffled.forEach(q => {
+
+generatedQuestions.push({
+
+topic:"Hometown",
+question:q
+
+});
+
+});
+
+addExtraTopics();
+
+}
+
+else if(randomPermanent.type === "home"){
+
+generatedQuestions.push({
+
+topic:"Home & Accommodation",
+question:randomPermanent.starter
+
+});
+
+}
+
+}
+
+function addExtraTopics(){
+
+const shuffledExtra =
+[...extraTopics]
+.sort(() => 0.5 - Math.random());
+
+const selected =
+shuffledExtra.slice(0,2);
+
+selected.forEach((topic,index) => {
+
+usedTopics.push(topic.name);
+
+const shuffledQuestions =
+[...topic.questions]
+.sort(() => 0.5 - Math.random());
+
+const count =
+index === 0 ? 2 : 3;
+
+const chosen =
+shuffledQuestions.slice(0,count);
+
+chosen.forEach(q => {
+
+generatedQuestions.push({
+
+topic:topic.name,
+question:q
+
+});
+
+});
+
+});
+
+}
+
+function showBranchButtons(){
+
+const container =
+document.getElementById(
+'branchButtons'
+);
+
+container.innerHTML = '';
+
+if(currentQuestion !== 0){
+return;
+}
+
+if(randomPermanent.type === "workStudy"){
+
+container.innerHTML = `
+
+<button class="branch-btn"
+onclick="selectWorkStudy('work')">
+
+I Work
+
+</button>
+
+<button class="branch-btn"
+onclick="selectWorkStudy('study')">
+
+I Study
+
+</button>
+
+`;
+
+}
+
+if(randomPermanent.type === "home"){
+
+container.innerHTML = `
+
+<button class="branch-btn"
+onclick="selectHome('flat')">
+
+Flat
+
+</button>
+
+<button class="branch-btn"
+onclick="selectHome('house')">
+
+House
+
+</button>
+
+`;
+
+}
+
+}
+
+function selectWorkStudy(type){
+
+generatedQuestions = [
+generatedQuestions[0]
+];
+
+const selected =
+type === "work"
+? randomPermanent.workQuestions
+: randomPermanent.studyQuestions;
+
+const shuffled =
+[...selected]
+.sort(() => 0.5 - Math.random())
+.slice(0,3);
+
+shuffled.forEach(q => {
+
+generatedQuestions.push({
+
+topic:"Work & Study",
+question:q
+
+});
+
+});
+
+addExtraTopics();
+
+document.getElementById(
+'branchButtons'
+).innerHTML = '';
+
+updateQuestionCounter();
+
+}
+
+function selectHome(type){
+
+generatedQuestions = [
+generatedQuestions[0]
+];
+
+const selected =
+type === "flat"
+? randomPermanent.flatQuestions
+: randomPermanent.houseQuestions;
+
+selected.forEach(q => {
+
+generatedQuestions.push({
+
+topic:"Home & Accommodation",
+question:q
+
+});
+
+});
+
+addExtraTopics();
+
+document.getElementById(
+'branchButtons'
+).innerHTML = '';
+
+updateQuestionCounter();
+
+}
+
+function startPractice(){
+
+document.getElementById(
+'coverPage'
+).style.display = 'none';
+
+document.getElementById(
+'mainApp'
+).style.display = 'block';
+
+createSession();
+
+setTimeout(() => {
+
+loadQuestion();
+
+},300);
+
+}
+
+function loadQuestion(){
+
+const current =
+generatedQuestions[currentQuestion];
+
+document.getElementById(
+'questionText'
+).textContent =
+current.question;
+
+document.getElementById(
+'topicBox'
+).textContent =
+"Topic: " + current.topic;
+
+updateQuestionCounter();
+
+document.getElementById(
+'progressBar'
+).style.width =
+((currentQuestion + 1)
+/ generatedQuestions.length)
+* 100 + "%";
+
+showBranchButtons();
+
+speakQuestion();
+
+startTimer();
+
+}
+
+function updateQuestionCounter(){
+
+document.getElementById(
+'questionCounter'
+).textContent =
+`Question ${currentQuestion + 1} / ${generatedQuestions.length}`;
+
+}
+
+let timeLeft = 40;
+let timerInterval;
+
+function startTimer(){
+
+clearInterval(timerInterval);
+
+timeLeft = 40;
+
+document.getElementById(
+'timer'
+).textContent =
+`00:${timeLeft}`;
+
+timerInterval = setInterval(() => {
+
+timeLeft--;
+
+if(timeLeft < 10){
+
+document.getElementById(
+'timer'
+).textContent =
+`00:0${timeLeft}`;
+
+}else{
+
+document.getElementById(
+'timer'
+).textContent =
+`00:${timeLeft}`;
+
+}
+
+if(timeLeft <= 0){
+
+clearInterval(timerInterval);
+
+nextQuestion();
+
+}
+
+},1000);
+
+}
+
+function nextQuestion(){
+
+if(currentQuestion <
+generatedQuestions.length - 1){
+
+currentQuestion++;
+
+loadQuestion();
+
+if(currentQuestion ===
+generatedQuestions.length - 1){
+
+document.getElementById(
+'nextBtn'
+).innerHTML =
+'✅ Finish Practice';
+
+}
+
+}else{
+
+finishPractice();
+
+}
+
+}
+
+function finishPractice(){
+
+clearInterval(timerInterval);
+
+document.getElementById(
+'completeBox'
+).style.display = 'block';
+
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:'smooth'
+});
+
+}
+
+function generateNewSession(){
+
+currentQuestion = 0;
+
+recordings = [];
+
+document.getElementById(
+'completeBox'
+).style.display = 'none';
+
+document.getElementById(
+'reviewSection'
+).style.display = 'none';
+
+document.getElementById(
+'reviewSection'
+).innerHTML = '';
+
+document.getElementById(
+'nextBtn'
+).innerHTML =
+'➡ Next Question';
+
+createSession();
+
+loadQuestion();
+
+}
+
+function speakQuestion(){
+
+window.speechSynthesis.cancel();
+
+const speech =
+new SpeechSynthesisUtterance(
+generatedQuestions[currentQuestion].question
+);
+
+speech.lang = 'en-GB';
+
+speech.rate = 0.92;
+
+speech.pitch = 0.95;
+
+const voices =
+window.speechSynthesis.getVoices();
+
+const british =
+voices.find(v =>
+v.lang.includes('en-GB')
+)
+
+|| voices[0];
+
+speech.voice = british;
+
+window.speechSynthesis.speak(speech);
+
+}
+
+let mediaRecorder;
+let audioChunks = [];
+let isRecording = false;
+
+async function startRecording(){
+
+if(isRecording) return;
+
+const stream =
+await navigator.mediaDevices.getUserMedia({
+audio:true
+});
+
+mediaRecorder =
+new MediaRecorder(stream);
+
+audioChunks = [];
+
+mediaRecorder.ondataavailable =
+event => {
+
+audioChunks.push(event.data);
+
+};
+
+mediaRecorder.onstop = () => {
+
+const audioBlob =
+new Blob(audioChunks,{
+type:'audio/mp3'
+});
+
+recordings[currentQuestion] =
+audioBlob;
+
+const audioUrl =
+URL.createObjectURL(audioBlob);
+
+document.getElementById(
+'audioPlayback'
+).src = audioUrl;
+
+stream.getTracks().forEach(track =>
+track.stop()
+);
+
+};
+
+mediaRecorder.start();
+
+isRecording = true;
+
+document.getElementById(
+'micBtn'
+).classList.add('recording');
+
+document.getElementById(
+'recordingText'
+).textContent =
+'Recording...';
+
+}
+
+function stopRecording(){
+
+if(!isRecording) return;
+
+mediaRecorder.stop();
+
+isRecording = false;
+
+document.getElementById(
+'micBtn'
+).classList.remove('recording');
+
+document.getElementById(
+'recordingText'
+).textContent =
+'Tap to Record';
+
+}
+
+function toggleRecording(){
+
+if(!isRecording){
+startRecording();
+}else{
+stopRecording();
+}
+
+}
+
+function downloadRecording(){
+
+if(recordings.length === 0){
+
+alert('No recordings available.');
+
+return;
+
+}
+
+const combinedBlob =
+new Blob(recordings,{
+type:'audio/mp3'
+});
+
+const url =
+URL.createObjectURL(combinedBlob);
+
+const a =
+document.createElement('a');
+
+a.href = url;
+
+a.download =
+'IELTS_Speaking_Practice.mp3';
+
+a.click();
+
+}
+
+function toggleReview(){
+
+const section =
+document.getElementById(
+'reviewSection'
+);
+
+if(section.style.display === 'block'){
+
+section.style.display = 'none';
+
+return;
+
+}
+
+section.style.display = 'block';
+
+section.innerHTML = '';
+
+usedTopics.forEach(topicName => {
+
+const topicCard =
+document.createElement('div');
+
+topicCard.className =
+'review-topic-card';
+
+let topicHTML = `
+
+<div class="review-topic-title">
+🟣 ${topicName}
+</div>
+
+`;
+
+const askedQuestions =
+generatedQuestions.filter(q =>
+q.topic === topicName
+);
+
+askedQuestions.forEach(q => {
+
+topicHTML += `
+
+<div class="review-question">
+
+<span class="question-label-review">
+✅ Asked:
+</span>
+
+${q.question}
+
+</div>
+
+`;
+
+});
+
+topicCard.innerHTML =
+topicHTML;
+
+section.appendChild(topicCard);
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
